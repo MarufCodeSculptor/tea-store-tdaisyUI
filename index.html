@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="colors-theme" content="light" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+
+    <title>Tea_house_with-daisyUI</title>
+    <!-- google font  link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind and daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custoim colors's  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "button-bg": "#43766C",
+              description: "#777",
+              cardBg: "#cbd5e1",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font awsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- header -->
+    <header>
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content items-start flex-col lg:flex-row-reverse">
+          <div class="relative">
+            <img
+              src="https://i.postimg.cc/K841tH9Y/banner.png"
+              class="mt-12 max-w-1/2 rounded-lg"
+            />
+            <div
+              class="flex gap-4 align-center justify-start bg-slate-200 absolute bottom-6 left-6"
+            >
+              <div
+                class="bg-blue-500 text-white py-9 px-12 rounded flex items-center justify-center gap-5"
+              >
+                <i class="fa-solid fa-star"></i>
+                <div>
+                  <h5 class="text-3xl text-yellow-400 font-bold">5.00</h5>
+                  <p>Trust Pilot Ratings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-8xl font-bold">
+              It's good <br />
+              tea time at The Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn text-red-50 bg-button-bg">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content start here  -->
+    <main class="container md:contianer mx-auto my-32">
+      <!---------------------------section OUR FEATURES PRODUCTS---------------- -->
+      <section>
+        <h3 class="text-center text-3xl font-semibold">
+          Our Featured Products
+        </h3>
+
+        <p class="text text-description my-5 lg:max-w-2xl mx-auto text-center">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-4">
+          <!-- card -->
+          <div
+            class="flex flex-col items-center justify-center shadow-xl p-6 m-5 md:p-7 border-2 rounded-lg bg-cardBg"
+          >
+            <img
+              src="https://i.postimg.cc/02V6Ms03/tea-1.png"
+              alt="tea-cup"
+              class="mb-4"
+            />
+            <h2 class="text-3xl capitalize font-semibold my-2">Milk tea</h2>
+            <p class="text-descriptio text-center text-xl">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center shadow-xl p-6 m-5 md:p-7 border-2 rounded-lg bg-cardBg"
+          >
+            <img
+              src="https://i.postimg.cc/BnyXpByB/tea-2.png"
+              alt="tea-cup"
+              class="mb-4"
+            />
+            <h2 class="text-3xl capitalize font-semibold my-2">black tea</h2>
+            <p class="text-descriptio text-center text-xl">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center shadow-xl p-6 m-5 md:p-7 border-2 rounded-lg bg-cardBg"
+          >
+            <img
+              src="https://i.postimg.cc/9f7znqH5/tea-3.png"
+              alt="tea-cup"
+              class="mb-4"
+            />
+            <h2 class="text-3xl capitalize font-semibold my-2">Lemon Tea</h2>
+            <p class="text-descriptio text-center text-xl">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center shadow-xl p-6 m-5 md:p-7 border-2 rounded-lg bg-cardBg"
+          >
+            <img
+              src="https://i.postimg.cc/kMFRC867/tea-4.png"
+              alt="tea-cup"
+              class="mb-4"
+            />
+            <h2 class="text-3xl capitalize font-semibold my-2">Green tea</h2>
+            <p class="text-descriptio text-center text-xl">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  -->
+  </body>
+</html>
